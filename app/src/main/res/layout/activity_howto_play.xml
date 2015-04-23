@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.yourdomain.runthedots.HowtoPlayActivity"
+    android:id="@+id/RuntheDots">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:id="@+id/HowtoPlaytext1"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/HowtoPlaytext1"
+        android:textSize="25sp"
+        android:textColor="#ff000000"
+        android:phoneNumber="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:text="Hvordan du spiller"
+        android:id="@+id/HowtoPlaytitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="39dp"
+        android:textColor="#ff000000"
+        android:textIsSelectable="true"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignRight="@+id/HowtoPlaytext1"
+        android:layout_alignEnd="@+id/HowtoPlaytext1"
+        android:layout_below="@+id/HowtoPlaytext1"
+        android:layout_toRightOf="@+id/HowtoPlaytext1"
+        android:layout_toEndOf="@+id/HowtoPlaytext1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:text="@string/HowtoPlaytext2"
+        android:id="@+id/HowtoPlaytext2"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:textColor="#ff000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:text="@string/HowtoPlaytext3"
+        android:id="@+id/HowtoPlaytext3"
+        android:layout_below="@+id/HowtoPlaytext2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:textSize="25sp"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="Tilbage til menu"
+        android:id="@+id/HowtoPlaytilMenuButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="HowtoPlaytilMenuonClick" />
+
+</RelativeLayout>
