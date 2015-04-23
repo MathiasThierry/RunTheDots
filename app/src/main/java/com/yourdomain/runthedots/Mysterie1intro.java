@@ -40,7 +40,7 @@ public class Mysterie1intro extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     /*
-    The code below makes buttons change from one interface to another
+    The code below makes buttons change from one interface to another interface
      */
     public void FortsættilMysterie1(View view) {
         Intent intent = new Intent (this,Mysterie1.class);
